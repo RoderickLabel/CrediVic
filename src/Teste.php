@@ -11,7 +11,7 @@ class Teste {
 	{
 
 		
-		$cliente =  new Cliente("Rodrigo", "roderickruotolo@gmail.com", "(11) 2211-9027");
+		$cliente =  new Cliente("Rodrigo", "roderickruotolo@gmail.com", "(11) 1111-9090");
 		$valorEmprestimo = 2000;
 		$juros = 8;
 		$numeroParcelas = 2;
