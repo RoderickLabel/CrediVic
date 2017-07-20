@@ -30,5 +30,4 @@ class Cliente {
 		return $this->telefone;
 	}
 
-
 }

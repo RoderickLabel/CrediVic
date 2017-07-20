@@ -1,5 +1,7 @@
 <?php 
 
-interface Contrato {
+namespace CrediVic;
 
+interface Contrato {
+	public function processa();
 }

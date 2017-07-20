@@ -1,14 +1,27 @@
 <?php
 
+use CrediVic\Contrato;
+
 namespace CrediVic;
 
-class ContratoCreditoPessoal {
+class ContratoCreditoPessoal implements Contrato {
 
+	/** @var Cliente $cliente */
 	private $cliente;
+
+	/** @var float $valorPrincipal Valor solicitado para empréstimo */
 	private $valorPrincipal;
+
+	/** @var float $juros Percentual dos juros negociados */
 	private $juros;
+
+	/** @var int $numeroParcelas */
 	private $numeroParcelas;
+
+	/** @var float $valorParcelas */
 	private $valorParcelas;
+
+	/** @var float $montante Valor total já contendo os juros */
 	private $montante;
 
 	public function __construct(Cliente $cliente, $valorPrincipal, $juros, $numeroParcelas, $jurosCompostos = false)
